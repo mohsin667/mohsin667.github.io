@@ -1075,7 +1075,8 @@ footer {
         list-style-type: none;
         margin: 0 6px;
         width: 2rem;
-        height: 2rem; }
+        height: 2rem;
+        display: inline-block; }
         .ind_04_section .review-slider .slick-dots li.slick-active button {
           background-color: #ffffff; }
         .ind_04_section .review-slider .slick-dots li button {
