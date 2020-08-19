@@ -835,11 +835,11 @@ footer {
         flex-flow: row; } }
     footer ul li {
       display: inline-block;
-      padding: 0 2.5rem;
       line-height: 15px;
       margin-bottom: 1rem; }
       @media screen and (min-width: 50em) {
         footer ul li {
+          padding: 0 2.5rem;
           border-right: 1px solid #ffffff; }
           footer ul li:last-child {
             border: 0; } }
@@ -948,7 +948,8 @@ footer {
       .ind_02_section .ind-wrapper {
         flex-flow: row; } }
     .ind_02_section .ind-wrapper p.text-white {
-      color: #ffffff; }
+      color: #ffffff;
+      margin-bottom: 1rem; }
     .ind_02_section .ind-wrapper .content {
       width: 100%;
       height: 100%;
@@ -961,7 +962,8 @@ footer {
           align-items: flex-start;
           text-align: left; } }
       .ind_02_section .ind-wrapper .content p {
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        margin-bottom: 1rem; }
         @media screen and (min-width: 50em) {
           .ind_02_section .ind-wrapper .content p {
             font-size: 2.4rem; } }
