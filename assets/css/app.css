@@ -848,6 +848,7 @@ footer {
   width: 100%;
   float: left;
   height: calc(100vh - 30rem);
+  min-height: 51.2rem;
   background: url(/assets/img/hero-banner.jpg) no-repeat;
   background-size: cover;
   position: relative; }
@@ -1072,7 +1073,9 @@ footer {
       justify-content: center; }
       .ind_04_section .review-slider .slick-dots li {
         list-style-type: none;
-        margin: 0 6px; }
+        margin: 0 6px;
+        width: 2rem;
+        height: 2rem; }
         .ind_04_section .review-slider .slick-dots li.slick-active button {
           background-color: #ffffff; }
         .ind_04_section .review-slider .slick-dots li button {

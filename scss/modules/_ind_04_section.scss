@@ -48,6 +48,8 @@
             li {
                 list-style-type: none;
                 margin: 0 6px;
+                width: 2rem;
+                    height: 2rem;
                 &.slick-active {
                     button {
                         background-color: $white;

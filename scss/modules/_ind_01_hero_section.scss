@@ -2,7 +2,8 @@
     margin-top: 7rem;
     width: 100%;
     float: left;
-    height: calc(100vh - 30rem);    
+    height: calc(100vh - 30rem);   
+    min-height: 51.2rem; 
     background: url(/assets/img/hero-banner.jpg) no-repeat;
     background-size: cover;
     position: relative;
