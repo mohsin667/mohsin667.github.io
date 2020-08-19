@@ -1,0 +1,88 @@
+.main-header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    nav {
+        padding: 1.75rem 0;
+        background-color: $white;
+        .navigation {
+            @include flex;  
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+            .nav-col-left {
+                .logo {
+                    img {
+                        max-width: 15rem;
+                    }
+            
+                }
+            
+            }
+            .s_and_m {
+                @include flex;
+                @include flex-center;
+                    
+                .social-icon {
+                    display: none;
+                    @include media($medium) {
+                        display: inline-block;
+                    }
+                    a {
+                        @include flex-center;
+                        display: inline-flex;
+                        margin-right: 5px;
+                        width: 3.5rem;
+                        height: 3.5rem;     
+                        background-color: $slate;
+                        border-radius: 100%;
+                        transition: all 0.2s ease;
+                        padding: 0.7rem;
+                        &:hover {
+                            background-color: $coffee;
+                        }
+                        img {   
+                            max-height: 1.7rem;
+                            max-width: 1.7rem; 
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .menu-bar {
+                    color: $coffee;
+                    @include flex;  
+                    flex-flow: row;
+                    align-items: center;
+                    padding-left: 3rem;
+                    p {
+                        padding: 0;
+                        text-transform: uppercase;
+                        display: none;
+                        @include media($medium) {
+                            display: block;
+                        }
+                    }
+                    .trigger {
+                        display: flex;
+                        flex-flow: column;
+                        padding-left: 1rem;
+                        span {
+                            background-color: $coffee;
+                            width: 2rem;
+                            height: 0.3rem;
+                            display: inline-block;
+                            margin-bottom: 0.4rem;
+                            &:last-child {
+                                margin-bottom: 0em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

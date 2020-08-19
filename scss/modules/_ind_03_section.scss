@@ -1,0 +1,106 @@
+.ind_03_section {
+    width: 100%;
+    float: left;
+    padding: 5rem 0 7rem 0;
+
+    .small-text {
+        color: $pink;
+    }
+
+    .f_b {
+        .fw_row {
+            padding-top: 3rem;
+            @include flex;
+            @include media($medium) {
+                padding-top: 5rem;
+                width: 80%;
+                max-width: 97rem;
+                margin: 0 auto;
+                justify-content: space-between;
+            }
+            .col-f,.col-r {
+                display: flex;
+            }
+            .col-f {
+                flex-flow: row-reverse;
+                @include media($medium) {
+                    flex-flow: row;
+                }
+            }
+
+            .col-s {
+                justify-content: space-between;
+                margin-bottom: 3rem;
+
+                @include media($medium) {
+                    margin-bottom: 1rem;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                @include media($medium) {
+                    width:  calc(50% - 1.5rem);
+                }       
+                &.col-r {
+                    flex-flow: row-reverse;
+                    .col-image {
+                        @include media($medium) {
+                            margin-right: 3rem;
+                            margin-left: auto;
+                        }
+                    }
+                    .text-sec {
+                        .col-heading {
+                            h4  {
+                                
+                                @include media($medium) {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-image {
+                    width: 7rem;
+                    @include media($medium) {
+                        width: 10rem;
+                        margin-left: 3rem;
+                    }
+                }
+                .text-sec {
+                    width: calc(100%  - 10rem);
+
+                    
+                    .col-heading {
+                        @include media(600px) {
+                            max-width: calc(100% - 5rem);
+                        }
+    
+                        @include media($medium) {
+                            max-width: calc(100% );
+                        }
+                        h4  {
+                            text-align: left;   
+                            @include media($medium) {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .text-sec {
+                h4 {
+                    margin-bottom: 1.5rem;
+                    font-size: 1.8rem;
+                    font-family: $regular;
+                }
+                p {
+                    text-align: left;
+                    font-size: 1.4rem;
+                    color: $pink;
+                }
+            }
+        }
+    }
+}

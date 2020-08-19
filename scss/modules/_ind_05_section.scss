@@ -1,0 +1,88 @@
+.ind_05_section {
+    padding: 5rem 0;
+    width: 100%;
+    float: left;
+    @include media($medium) {
+        padding: 5rem  7rem 5rem 7rem;
+    }
+
+    @include media($xlarge) {
+        padding: 5rem  10rem 5rem 10rem;
+    }
+
+    .global-heading-text {
+        text-align: left;
+    }
+
+    .up-event {
+        padding-top: 3.5rem;
+        .up-row {
+            @include flex;
+            margin-bottom: 3.5rem;
+            .col-left {
+                height: 19rem;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                @include media($medium) {
+                    width: 29rem;
+                    margin: 0 3.5rem 0 0;
+
+                }
+                .info-g  {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .col-right {
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                .inner-text {
+                    ul {
+                        padding: 0;
+                        li {
+                            list-style: none;
+                            width: 100%;
+                            display: flex;
+                            margin-bottom: 0.5rem;
+                            @include media($medium) {
+                                align-items: center;
+                                margin-bottom: 0;
+                            }
+                            a {
+                                color: $coffee;
+                                font-size: 1.4rem;
+                                
+                            }
+                            &.location{
+                                a {
+                                    color: $slate;
+                                    font-style: italic;
+                                }
+                            }
+                            span {
+                                max-width: 1.8rem;
+                                display: inline-block;
+                                margin-right: 1.2rem;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .ue-cta {
+                    .button {
+                        height: 4.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

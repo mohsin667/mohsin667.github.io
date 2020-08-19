@@ -1,0 +1,119 @@
+.ind_04_section {
+    padding: 7rem 0;
+    width: 100%;
+    float: left;
+    background:url(/assets/img/slider-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: $white;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+    }
+
+    .ind-wrapper {
+        position: relative;
+        z-index: 9;
+    }
+
+    @include media($xlarge) {
+        padding: 11.5rem 0;
+    }
+
+    h4  {
+        margin-bottom: 5rem;
+        font-family: $regular;
+
+        @include media($xlarge) {
+            margin-bottom: 7rem;
+        }
+    }
+
+    .review-slider { 
+        position: relative;
+
+        .slick-dots {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+
+            li {
+                list-style-type: none;
+                margin: 0 6px;
+                &.slick-active {
+                    button {
+                        background-color: $white;
+                    }
+                }
+                button {
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                    background: transparent;
+                    border: 0.3rem solid $white;
+                    border-radius: 100%;
+                    color: transparent;
+                }
+            }
+        }
+        .rerview-slide {
+            margin-bottom: 7rem;
+            &.slick-slide  {
+                @include flex;
+                @include flex-center;
+                flex-flow:column;   
+                padding: 0 4rem;
+                @include media($medium) {
+                    flex-flow:column;
+                }
+                @include media($xlarge) {
+                    padding: 0 8rem ;
+                }
+
+                
+                .review-text {
+                    margin-bottom: 3rem;
+                    p {
+                        @include media($medium) {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .des  {
+                    p {
+                        font-size: 2.2rem;
+                        font-family: $bold;
+                        font-style: italic  ;
+                    }
+                }
+            }
+            .avtar {
+                width: 12rem;
+                height: 12rem;
+                margin-bottom: 3rem;
+
+                @include media($xxlarge) {
+                    width: 16rem;
+                    height: 16rem;
+                }
+            }   
+        }
+    }
+}
+
+.rerview-slide {
+    @include media($medium) {
+        opacity: 0.4;
+    }
+}
+.slick-current+.slick-active {
+    opacity: 1 ;
+}
