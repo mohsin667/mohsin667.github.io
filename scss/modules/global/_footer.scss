@@ -25,7 +25,10 @@ footer{
             border: 0;
             padding-left: 2rem;
             border-radius: 3px 0 0 3px;
-            height: 52px;
+            height: 50px;
+            @include media($medium) {
+                height: 52px;
+            }
             @include media($large) {
                 min-width: 35rem;
             }
@@ -34,6 +37,10 @@ footer{
             margin-left: -5px;
             outline: 0;
             border: 0;
+            min-width: auto;
+            @include media($medium) {
+                min-width: 15rem;
+            }
         }
     }
     ul {

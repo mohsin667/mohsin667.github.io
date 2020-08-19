@@ -809,14 +809,21 @@ footer {
       border: 0;
       padding-left: 2rem;
       border-radius: 3px 0 0 3px;
-      height: 52px; }
+      height: 50px; }
+      @media screen and (min-width: 50em) {
+        footer .field-box input {
+          height: 52px; } }
       @media screen and (min-width: 75em) {
         footer .field-box input {
           min-width: 35rem; } }
     footer .field-box button {
       margin-left: -5px;
       outline: 0;
-      border: 0; }
+      border: 0;
+      min-width: auto; }
+      @media screen and (min-width: 50em) {
+        footer .field-box button {
+          min-width: 15rem; } }
   footer ul {
     padding-top: 1rem;
     display: flex;
