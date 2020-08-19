@@ -6,11 +6,11 @@
 
 
     @include media($medium) {
-        padding: 5rem  7rem 5rem 7rem;
+        padding: 5rem  7rem 7rem 7rem;
     }
 
     @include media($xlarge) {
-        padding: 5rem  10rem 5rem 10rem;
+        padding: 5rem  10rem 10rem 10rem;
     }
 
     .global-heading-text {
@@ -50,6 +50,7 @@
                     width: 11rem;
                     text-align: center;
                     background-color: #ebe2d9;
+                    padding-top: 3rem;
                     h4 {
                         font-size: 2rem;
                     }

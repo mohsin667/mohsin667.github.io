@@ -79,14 +79,10 @@
         font-size: 4.2rem;
     }
     @include media($large) {
-        font-size: 4.2rem;
+        font-size: 4rem;
     }
-    @include media($xlarge) {
-        font-size: 4.6rem;
-    }
-    @include media($xxlarge) {
-        font-size: 5.2rem;
-    }
+    
+    
 }
 
 @mixin h3-font-style {

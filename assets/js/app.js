@@ -33,4 +33,27 @@ $(document).ready(function () {
     }
     //Functions initialization
     slickSlider.init();
+    function ValidateEmail() {
+
+    }
+
+    $(".menu-bar").on("click", function () {
+        $(".drop-down").slideToggle();
+        $(this).find(".trigger").toggleClass("rotate");
+    })
+
+    document.querySelector(".footer form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let vals = document.querySelector(".footer form input").value
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(vals)) {
+            $(".error").hide()
+            $(".footer form input").val("")
+            return (true)
+        }
+        if (vals == "") {
+            $(".error").show()
+        }
+        $(".error").show()
+        return (false)
+    })
 });

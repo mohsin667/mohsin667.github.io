@@ -1,0 +1,66 @@
+footer{
+    width: 100%;
+    float: left;
+    background-color: $footer;
+    text-align: center;
+    color: $white;
+    padding: 5rem 5rem;
+    @include media($large) {
+        padding: 10rem 5rem;
+    }
+    .error {
+        color: red;
+        display: none;
+        font-size: 12px ;
+    }
+    h2 {
+        font-family: $regular;
+        margin-bottom: 1rem;
+    }
+    .field-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+            border: 0;
+            padding-left: 2rem;
+            border-radius: 3px 0 0 3px;
+            height: 52px;
+            @include media($large) {
+                min-width: 35rem;
+            }
+        }
+        button {
+            margin-left: -5px;
+            outline: 0;
+            border: 0;
+        }
+    }
+    ul {
+        padding-top: 1rem;
+        @include flex;
+        @include flex-center;
+        
+
+        li {
+            display: inline-block;
+            padding: 0 2.5rem;
+            line-height: 15px;
+            margin-bottom: 1rem;
+
+            @include media($medium) {
+                border-right: 1px solid #ffffff;
+                &:last-child {
+                    border: 0;
+                }
+            }
+            a {
+                color: #ffffff;
+                font-size: 12px;
+                line-height: 0;
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+}
