@@ -1086,7 +1086,8 @@ footer {
           background: transparent;
           border: 0.3rem solid #ffffff;
           border-radius: 100%;
-          color: transparent; }
+          color: transparent;
+          font-size: 0; }
     .ind_04_section .review-slider .rerview-slide {
       margin-bottom: 7rem; }
       .ind_04_section .review-slider .rerview-slide.slick-slide {
