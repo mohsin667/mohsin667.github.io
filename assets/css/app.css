@@ -826,6 +826,9 @@ template {
         .ind_02_section .two-cols .col {
           width: 50%;
           background: rgba(201, 194, 182, 0.65); } }
+      @media screen and (min-width: 90.1em) {
+        .ind_02_section .two-cols .col {
+          max-width: calc(100% - 20rem); } }
   .ind_02_section .ind-wrapper {
     height: 100%;
     display: flex;

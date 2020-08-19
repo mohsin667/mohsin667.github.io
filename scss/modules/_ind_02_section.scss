@@ -25,6 +25,9 @@
                 width: 50%; 
                 background: rgba(201, 194, 182, 0.65);
             }
+            @include media($xxlarge){
+                max-width: calc(100% - 20rem);
+            }
         }
     }
 
